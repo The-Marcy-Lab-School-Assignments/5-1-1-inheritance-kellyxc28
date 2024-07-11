@@ -11,8 +11,17 @@ class Quadrilateral {
   }
 }
 
-class Rectangle {
+class Rectangle extends Quadrilateral {
+  constructor(side1, side2) {
+    super(side1, side2, side1, side2);
+  }
 
+  /* the constructor can be inherited too as long as the signature 
+  doesn't need changing */
+
+  getArea() {
+    return this.side1 * this.side2;
+  }
 }
 
 class Square {
