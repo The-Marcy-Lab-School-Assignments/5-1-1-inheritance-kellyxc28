@@ -35,7 +35,25 @@ class Square extends Rectangle {
 
 /* Be creative with this one! */
 class Person {
+  #passwords = [];
 
+  constructor(whatFor, email) {
+    this.whatFor = whatFor;
+    this.email = email;
+    this.#passwords;
+  }
+
+  setPassword(newPassword) {
+    this.#passwords = newPassword;
+  }
+
+  list() {
+
+  }
+
+  find() {
+
+  }
 }
 
 module.exports = {
